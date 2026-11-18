@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 1.27
+          "drill": 3.2,
+          "height": 3.2,
+          "width": 3.2
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -83,12 +83,12 @@
       ],
       "drc_exclusions": [
         [
-          "silk_edge_clearance|165900000|107150000|4d6d8a06-4357-4b68-8490-05c1015c57a9|3897843f-e312-4bf9-93d6-6b4dad77397f",
-          "USB has to hang over edge."
+          "silk_edge_clearance|171000000|107150000|6897a355-81ce-4ac8-83a4-0aaaceb68455|3897843f-e312-4bf9-93d6-6b4dad77397f",
+          "USB hangs off edge"
         ],
         [
-          "silk_edge_clearance|165900000|97750000|4d6d8a06-4357-4b68-8490-05c1015c57a9|1c711b39-cf1e-40fb-b19b-9c2c788c066e",
-          ""
+          "silk_edge_clearance|171000000|97750000|6897a355-81ce-4ac8-83a4-0aaaceb68455|1c711b39-cf1e-40fb-b19b-9c2c788c066e",
+          "USB hangs off edge"
         ]
       ],
       "meta": {
@@ -557,7 +557,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "Manufacturing/",
       "specctra_dsn": "",
       "step": "",
       "vrml": ""
@@ -570,7 +570,7 @@
       "method": 0,
       "sort_order": 0
     },
-    "bom_export_filename": "${PROJECTNAME}.csv",
+    "bom_export_filename": "Manufacturing/EcoCar Onboarding 26_27.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -644,12 +644,42 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Type",
+          "name": "Sim.Type",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -702,7 +732,7 @@
         "uuid": "156879be-dbeb-4d41-a37d-0d495cdeb912"
       }
     ],
-    "used_designators": "RV1,#FLG1-2,#FLG4,P1,J1-8,H1-4,R1-19,U1-3,SW1-3,C1-17,FB1,#PWR1-58,D1-11,Y1",
+    "used_designators": "RV1,#FLG1-2,#FLG4,P1,J1-8,R1-19,H1-4,U1-3,SW1-4,FB1,C1-17,#PWR1-58,D1-11,Y1",
     "variants": []
   },
   "sheets": [
